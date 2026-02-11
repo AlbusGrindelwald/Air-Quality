@@ -8,7 +8,7 @@ class Settings:
 
     @property
     def API_KEY(self) -> str:
-        return os.getenv("API_KEY", "dev-key-123")
+        return os.getenv("API_KEY", "airq-production-key-45892")
 
     @property
     def DEFAULT_PLAN(self) -> str:
@@ -16,14 +16,14 @@ class Settings:
 
     @property
     def JWT_SECRET(self) -> str:
-        return os.getenv("JWT_SECRET", "your-secret-key-change-in-production")
+        return os.getenv("JWT_SECRET", "SuperStrongSecretKey_928374928374")
 
     @property
     def JWT_EXPIRES_MIN(self) -> int:
-        return int(os.getenv("JWT_EXPIRES_MIN", "60"))
+        return int(os.getenv("JWT_EXPIRES_MIN", "120"))
 
     @property
     def COOKIE_DOMAIN(self) -> str:
-        return os.getenv("COOKIE_DOMAIN", "localhost")
+        return os.getenv("COOKIE_DOMAIN", "your-backend-name.onrender.com")
 
 settings = Settings()
